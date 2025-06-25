@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const math = require("mathjs");
 class Calculator {
     constructor(displayId) {
         const elem = document.getElementById(displayId);

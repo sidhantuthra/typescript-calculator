@@ -5,7 +5,7 @@
   "main": "src/calculator.ts",
   "scripts": {
     "build": "tsc",
-    "start": "tsc && open index.html"
+    "start": "npm run build && xdg-open index.html"
   },
   "dependencies": {
     "mathjs": "^11.11.0"
