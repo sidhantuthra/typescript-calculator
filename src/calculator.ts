@@ -1,4 +1,4 @@
-import * as math from 'mathjs';
+declare const math: any;
 
 class Calculator {
   private display: HTMLInputElement;
