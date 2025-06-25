@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const math = require("mathjs");
 class Calculator {
     constructor(displayId) {
         const elem = document.getElementById(displayId);
@@ -15,8 +17,9 @@ class Calculator {
     }
     calculate() {
         try {
-            // Using eval for simplicity; in production you may want a safer parser
-            this.display.value = eval(this.display.value).toString();
+            // Use mathjs for safe mathematical expression evaluation
+            const result = math.evaluate(this.display.value);
+            this.display.value = result.toString();
         }
         catch (_a) {
             this.display.value = 'Error';
