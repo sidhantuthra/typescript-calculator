@@ -1,3 +1,5 @@
+import * as math from 'mathjs';
+
 class Calculator {
   private display: HTMLInputElement;
 
@@ -19,8 +21,9 @@ class Calculator {
 
   calculate(): void {
     try {
-      // Using eval for simplicity; in production you may want a safer parser
-      this.display.value = eval(this.display.value).toString();
+      // Use mathjs for safe mathematical expression evaluation
+      const result = math.evaluate(this.display.value);
+      this.display.value = result.toString();
     } catch {
       this.display.value = 'Error';
     }
