@@ -9,6 +9,7 @@
     #display { width: 100%; height: 40px; font-size: 20px; text-align: right; margin-bottom: 5px; }
     .buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
     button { height: 40px; font-size: 18px; }
+    #equals { grid-column: 1 / -1; }
   </style>
 </head>
 <body>
@@ -32,9 +33,9 @@
 
       <button data-value="0">0</button>
       <button data-value=".">.</button>
-      <button id="equals">=</button>
-      <button data-value="-">-</button>
       <button data-value="+">+</button>
+      <button data-value="-">-</button>
+      <button id="equals">=</button>
     </div>
   </div>
 
