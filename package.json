@@ -8,7 +8,7 @@
     "start": "npm run build && xdg-open index.html"
   },
   "dependencies": {
-    "mathjs": "^11.11.0"
+    "mathjs": "^15.2.0"
   },
   "devDependencies": {
     "typescript": "^5.0.0"
